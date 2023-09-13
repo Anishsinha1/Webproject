@@ -1,0 +1,147 @@
+body{
+    background-color: #090916;
+    opacity: 0.9;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #090916 9px ), repeating-linear-gradient( #4f4f9e55, #3939df );;
+    background-size:cover;
+}
+
+div{
+    border:2.4px dotted black;
+}
+.col-sm-1{
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    text-align: center;
+    height:60px;
+}
+.col-sm-2{
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    text-align: center;
+    height:60px;
+}
+.col-sm-3{
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    text-align: center;
+    height:60px;
+}
+.col-sm-4{
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    text-align: center;
+    height:60px;
+}
+.col-sm-6{
+ background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    text-align: center;
+    height:60px;
+}
+
+
+.bi-whatsapp{
+    border:6px dotted red;
+    background-color: black;
+    
+    }
+    .bi-twitter{
+border:6px dotted red;
+background-color: black;
+}
+
+.bi-facebook{
+    border:6px dotted red;
+    background-color: black;
+        }
+ .bi-messenger{
+    border:6px dotted red;
+    background-color: black;
+}
+.bi-github {
+    border:6px dotted red;
+    background-color: black;
+}
+.bi-envelope-fill{
+    border:6px dotted red;
+    background-color: black;
+}
+.bi-instagram{
+    border:6px dotted red;
+    background-color: black;
+}
+.bi-linkedin{
+    border:6px dotted red;
+    background-color: black;
+    }
+.bi-pinterest{
+    border:6px dotted red;
+    background-color: black;
+}
+.bi-snapchat{
+    border:6px dotted red;
+    background-color: black;
+    }
+.bi-tiktok{
+    border:6px dotted red;
+    background-color: black;
+        }
+.bi-youtube{
+    border:6px dotted red;
+    background-color: black;
+}
+.bi-camera{
+    border:6px dotted red;
+    background-color: black;
+}
+    .bi-calculator{
+        border:6px dotted red;
+    background-color: black;
+        }
+.bi-keyboard{
+    border:6px dotted red;
+    background-color: black;
+}
+.bi-alarm{
+    border:6px dotted red;
+    background-color: black;
+                
+                }
+.bi-headphones{
+    border:6px dotted red;
+    background-color: black;
+            }
+.bi-laptop{
+    border:6px dotted red;
+    background-color: black;
+}
+.bi-cloud{
+    border:6px dotted red;
+    background-color: black;
+         }
+.bi-brightness-high{
+    border:6px dotted red;
+    background-color: black;
+            }
+.bi-moon-stars{
+    border:6px dotted red;
+    background-color: black;
+             }
+.bi-rainbow{
+    border:6px dotted red;
+    background-color: black;
+        }
+.bi-speaker{
+    border:6px dotted red;
+    background-color: black;
+           }
+.bi-music-player{
+    border:6px dotted red;
+    background-color: black;
+         }
+.bi-printer{
+    border:6px dotted red;
+    background-color: black;
+         }
+.bi-geo{ border:6px dotted red;
+    background-color: black;
+         }
+.bi-geo-alt{
+    border:6px dotted red;
+    background-color: black;
+}
