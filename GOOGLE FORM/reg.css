@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@1,900&display=swap');
+
+
+.light{
+    border:12px groove;
+    border-image: #C6FFDD;  /* fallback for old browsers */
+    border-image: -webkit-linear-gradient(to bottom, #f7797d, #FBD786, #C6FFDD)1;  /* Chrome 10-25, Safari 5.1-6 */
+    border-image: linear-gradient(to bottom, #f7797d, #FBD786, #C6FFDD)1; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding:10px ;
+    padding-right:10px ;
+   background-color:#935355;
+    
+    background-size:cover ;
+    background-repeat:no-repeat ;
+    margin-top:100px;
+    width:106%;
+}
+
+.img-fluid{
+    width:56px;
+    height:56px;
+    border:5px dotted yellowgreen;
+}
+.bi-facebook{
+    margin-top:5px ;
+     /* margin-left:40px;*/
+      color:brown;
+      border:5px dotted beige;
+      background-image:url("https://cdn.pixabay.com/photo/2017/11/09/10/48/christmas-2933030__340.jpg"); 
+
+    }
+
+
+    .bi-facebook:hover{
+        transition-delay:0.1s;
+        transition-property:all;
+        transition-timing-function:ease;
+        transition-duration:20s ;
+        transform:rotate(360deg) ;
+       
+    }
+    .bi-whatsapp{
+        margin-top:5px ; 
+        color:brown ;
+        border:5px dotted whitesmoke;
+        background-image:url("https://cdn.pixabay.com/photo/2017/11/09/10/48/christmas-2933030__340.jpg"); 
+    
+        
+    }
+    .bi-whatsapp:hover{
+        transition-delay:0.1s;
+        transition-property:all;
+        transition-timing-function:ease;
+        transition-duration:20s ;
+        transform:rotate(360deg) ;
+        
+       
+    }
+    .bi-messenger{
+        margin-top:5px ;
+        color:brown ;
+        border:5px dotted whitesmoke;
+        background-image:url("https://cdn.pixabay.com/photo/2017/11/09/10/48/christmas-2933030__340.jpg"); 
+    }
+
+    .bi-messenger:hover{
+        transition-delay:0.1s;
+        transition-property:all;
+        transition-timing-function:ease;
+        transition-duration:20s ;
+        transform:rotate(360deg) ;
+        
+      
+    }
+    .bi-twitter{
+        margin-top:5px ;
+        color:brown;
+        border:5px dotted whitesmoke;
+        background-image:url("https://cdn.pixabay.com/photo/2017/11/09/10/48/christmas-2933030__340.jpg"); 
+    
+    }
+    .bi-twitter:hover{
+        transition-delay:0.1s;
+        transition-property:all;
+        transition-timing-function:ease;
+        transition-duration:20s ;
+        transform:rotate(360deg) ;
+        
+       
+    }
+    .bi-youtube{
+        margin-top:5px ;
+        color:brown;
+        border:5px dotted whitesmoke;
+        background-image:url("https://cdn.pixabay.com/photo/2017/11/09/10/48/christmas-2933030__340.jpg");   
+    }
+
+    .bi-youtube:hover{
+        transition-delay:0.1s;
+        transition-property:all;
+        transition-timing-function:ease;
+        transition-duration:20s ;
+        transform:rotate(360deg) ;
+        
+       
+    }
+    .bi-linkedin{
+        margin-top:5px ;
+        color:brown;
+        border:5px dotted whitesmoke;
+        background-image:url("https://cdn.pixabay.com/photo/2017/11/09/10/48/christmas-2933030__340.jpg");    
+    }
+    .bi-linkedin:hover{
+        transition-delay:0.1s;
+        transition-property:all;
+        transition-timing-function:ease;
+        transition-duration:20s ;
+        transform:rotate(360deg) ;
+       
+    }
+    .bi-share{
+        margin-top:5px ;
+        color:brown;
+        border:5px dotted whitesmoke;
+        background-image:url("https://cdn.pixabay.com/photo/2017/11/09/10/48/christmas-2933030__340.jpg"); 
+    }
+    .bi-share:hover{
+        transition-delay:0.1s;
+        transition-property:all;
+        transition-timing-function:ease;
+        transition-duration:20s ;
+        transform:rotate(360deg) ;
+        
+       
+    }
+    .bi-pinterest{
+        margin-top:5px ;
+        color:brown;
+        border:5px dotted whitesmoke;
+        background-image:url("https://cdn.pixabay.com/photo/2017/11/09/10/48/christmas-2933030__340.jpg");       
+    }
+    .bi-pinterest:hover{
+        transition-delay:0.1s;
+        transition-property:all;
+        transition-timing-function:ease;
+        transition-duration:20s ;
+        transform:rotate(360deg) ;
+        
+        
+    }
+    .bi-chat-dots{
+        margin-top:5px ;
+        color:brown;
+        border:5px dotted whitesmoke;
+        background-image:url("https://cdn.pixabay.com/photo/2017/11/09/10/48/christmas-2933030__340.jpg"); 
+              
+    } 
+    .bi-chat-dots:hover{
+        transition-delay:0.1s;
+        transition-property:all;
+        transition-timing-function:ease;
+        transition-duration:20s ;
+        transform:rotate(360deg) ;
+       
+    }
+    .bi-github{
+       margin-top:5px;
+        color:brown;
+        border:5px dotted whitesmoke;
+        background-image:url("https://cdn.pixabay.com/photo/2017/11/09/10/48/christmas-2933030__340.jpg"); 
+    }
+    .bi-github:hover{
+        transition-delay:0.1s;
+        transition-property:all;
+        transition-timing-function:ease;
+        transition-duration:20s ;
+        transform:rotate(360deg) ;
+        
+       
+    }
+body{
+    padding-left:100px;
+    padding-right:100px;
+    background-color: #12e025;
+opacity: 1;
+background-image: radial-gradient(circle at center center, #4f2c96, #12e025), repeating-radial-gradient(circle at center center, #4f2c96, #4f2c96, 4px, transparent 8px, transparent 4px);
+background-blend-mode: multiply;
+
+   /* background-image:url("https://cdn.pixabay.com/photo/2020/03/20/14/46/pattern-4950858_960_720.jpg")*/;
+    /*background-image:url("https://cdn.pixabay.com/photo/2017/10/14/11/32/christmas-2850287_960_720.jpg");
+
+/*background-image:url("https://cdn.pixabay.com/photo/2022/09/14/21/45/background-7455260_960_720.png");*/
+    background-size:cover;
+    background-repeat:no-repeat ;
+    background-position:fixed;
+}
+.warning{
+    border: 5px dotted whitesmoke;
+    background-color:rgb(55, 45, 32);
+    font-weight: bold;
+    font-family: 'Tourney', cursive;
+    font-size:16px ;
+}
+.fs-5{
+    font-family: 'Tourney', cursive;
+    color:blanchedalmond;
+    
+}
+.dtn{
+    border:5px dotted cornsilk;
+    border-radius:50px;
+    width: 100%;
+}
+.btn{
+    border:4px dotted black;
+    font-size:100px;
+    
+}
+.lime{
+    border:3.5px dotted darkblue;
+    margin-left:450px;
+
+}
+

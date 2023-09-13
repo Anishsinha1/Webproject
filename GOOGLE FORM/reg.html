@@ -1,0 +1,671 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap By SKILLHUB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="reg.css">
+    </head>
+    <body>
+    <form class="form-control light" >
+     <p class="text-center mt-2 fst-italic text-warning text-decoration-underline fw-bold fs-1 ">
+    <img class="img-fluid rounded-pill" src="https://st2.depositphotos.com/1853861/7023/v/600/depositphotos_70238777-stock-illustration-sign-up-button.jpg"> 
+    Registration Form
+    </p>
+    <details class="dtn mt-3">
+      <summary class="fs-1 fw-bold fst-italic text-warning text-decoration-underline text-center mb-2">
+      <img class="img-fluid rounded-pill"src="https://p.kindpng.com/picc/s/406-4064413_enrollment-information-button-food-menu-icon-png-orange.png">Basic Information:</summary>
+      
+      <div class="container">
+      <div class="row">
+      <div class="col-md-4">
+        <label class="form-label fs-5  text-white-50">
+         <img class="img-fluid rounded-pill"src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359554__340.png">First Name:</label>
+        <input type="text" class="form-control warning mb-2 rounded-pill autofocus"  onfocus="handleOnfocus(this)"onblur="handleOnblur(this)"
+         placeholder="Enter your First name"required>
+         </div>
+      <div class="col-md-4">
+        <label  class="form-label fs-5">
+         <img class="img-fluid rounded-pill" src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359554__340.png"> 
+          Middle Name:</label>
+        <input type="text" class="form-control  warning mb-2 rounded-pill"onfocus="handleOnfocus(this)"onblur="handleOnblur(this)" placeholder="Enter the Middle Name" required>
+        </div>
+      <div class="col-md-4">
+        <label  class="form-label fs-5">
+          <img class="img-fluid rounded-pill" src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359554__340.png">
+          Last Name:</label>
+      <input type="text" class="form-control warning  mb-2 rounded-pill"onfocus="handleOnfocus(this)"onblur="handleOnblur(this)" placeholder="Enter Last Name " required>
+        </div>
+      </div>
+        </div>
+        <div class="row">
+      <div class="col-md-4">
+        <label  class="form-label fs-5">
+          <img class="img-fluid rounded-pill"src="https://st2.depositphotos.com/1432405/11617/v/600/depositphotos_116172290-stock-illustration-student-id-icon-simple-style.jpg">Student Number:</label>
+        <input type="text" class="form-control warning  mb-2 rounded-pill"onfocus="handleOnfocus(this)"onblur="handleOnblur(this)" required>
+        </div>
+       <div class="col-md-4">
+        <label class="form-label fs-5">
+         <img class="img-fluid rounded-pill" src="https://cdn-icons-png.flaticon.com/512/6146/6146701.png"> 
+          Year:</label>
+        <input type="number" class="form-control warning mb-2 rounded-pill"onfocus="handleOnfocus(this)"onblur="handleOnblur(this)" required>
+        </div>
+      <div class="col-md-4">
+          <label class="form-label fs-5">
+           <img class="img-fluid rounded-pill"src="https://c8.alamy.com/comp/ER91BF/vector-illustration-of-orange-3d-email-icon-ER91BF.jpg">
+           Email:</label>
+          <input type="Email" placeholder="----@gmail.com" class="form-control warning  mb-2 rounded-pill"onfocus="handleOnfocus(this)"onblur="handleOnblur(this)" required>
+           </div>
+      </div>
+       <div class="row">
+      <div class="col-md-7">
+        <label class="form-label  fs-5">
+        <img class="img-fluid rounded-pill"src="https://3.files.edl.io/7e86/22/09/16/230951-462d54f3-d34c-4f9c-be43-cbe61af924af.png">Degree Program:</label>
+        <select  class="form-select fs-5  rounded-pill warning required"onfocus="handleOnfocus(this)"onblur="handleOnblur(this)">
+          <option value="1">choose</option>
+          <option value="2"> BS in Med Physics</option>
+          <option value="3"> MS in Physics</option>
+          <option value="4"> Phd in Physics</option>
+          <option value="5"> BS in Computer Science</option>
+          <option value="6"> MS in Computer Science</option>
+          <option value="7"> Phd in Computer Science</option>
+          <option value="8"> BS in Psychology</option>
+          <option value="9"> MS in Psychology</option>
+          </select>
+      </div>
+      <div class="col-md-5">
+        <label class="form-label  fs-5">
+       <img class="img-fluid rounded-pill" src="https://www.pngfind.com/pngs/m/459-4594221_candado-network-security-icon-png-transparent-png.png"> Network Provided:</label>
+        <select  class="form-select   rounded-pill warning required"onfocus="handleOnfocus(this)"onblur="handleOnblur(this)">
+          <option value="1">choose</option>
+          <option value="2"> Globe</option>
+          <option value="3"> Red Mobile</option>
+          <option value="4"> Smart</option>
+          <option value="5"> Sun Celluar</option>
+          <option value="6"> Talk in Text</option>
+          <option value="7"> Touch Mobile</option>
+          </select>
+        </div>
+       </div>
+
+       <div class="row">
+       <div class="col-md-7">
+        <label class="form-label fs-5">
+         <img class="img-fluid rounded-pill"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSPzSYqx9oyVOWxAkUMQp5zvbLG9WAwehBw4hfGQtHQOnTue_weaXuh-zyWL24vCs-OWc&usqp=CAU" >Mobile Number:</label>
+        <input type="tel" placeholder="Enter your Mobile Number" class="form-control warning  mb-2 rounded-pill"onfocus="handleOnfocus(this)"onblur="handleOnblur(this)" required>
+       
+         </div>
+         <div class="col-md-5">
+          <label class="form-label fs-5">
+          <img class="img-fluid rounded-pill" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJt0xsSeJb_uHnBci6lzFhkcSuYdYiwdwgrA&usqp=CAU">Birth Date:</label>
+          <input type="date"  class="form-control warning  mb-2 rounded-pill"onfocus="handleOnfocus(this)"onblur="handleOnblur(this)" required>
+           </div>
+         </div>
+         <div class="col-12">
+            <label  class="form-label fs-5">
+              <img class="img-fluid rounded-pill"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKmErISapYzCVDlOpOuoJo7Jc0HPPC-mnKSndINOXj6NiNytetbAyclOrkKZq6ckkcs4A&usqp=CAU">    
+              Present Address:</label>
+            <input type="text" class="form-control warning  mb-2 rounded-pill"onfocus="handleOnfocus(this)"onblur="handleOnblur(this)"placeholder="1234 Main St" required>
+          </div>
+          <div class="col-12">
+            <label for="inputAddress2" class="form-label fs-5">
+             <img class="img-fluid rounded-pill" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYrD1aQg8BcEM01Xgeyu75k82I39H6-Hd08GjMCYt5Rd-07_VOJssYU-K5wA8xsfIzOmw&usqp=CAU" >Address 2:</label>
+            <input type="text" class="form-control warning  mb-2 rounded-pill"onfocus="handleOnfocus(this)"onblur="handleOnblur(this)" placeholder="Apartment, studio, or floor" required> 
+          </div>
+          <div class="row">
+          <div class="col-md-3">
+            <label class="form-label fs-5">
+           <img class="img-fluid rounded-pill" src="https://cdn3.iconfinder.com/data/icons/cities-2/150/13-Mumbai-512.png">  
+              
+              
+              
+              City:</label>
+            <input type="text" class="form-control warning  mb-2 rounded-pill"onfocus="handleOnfocus(this)"onblur="handleOnblur(this)" required>
+          </div>
+          <div class="col-md-3">
+            <label  class="form-label fs-5">
+              <img class="img-fluid rounded-pill"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOVk9FQ61zYBF4Y_VsF3JTQMztoZ4-NAp66vOmcoUCZ5XVGMAHwtpMfv5FzQp8X2jawUY&usqp=CAU">     
+              
+              Country:</label>
+           <select  class="form-select rounded-pill warning required"onfocus="handleOnfocus(this)"onblur="handleOnblur(this)">
+              <option value="1">choose</option>
+              <option value="2">India</option>
+              <option value="3">England</option>
+              <option value="4">Newsland</option>
+              <option value="5"> Scotland</option>
+              <option value="6"> Dubai</option>
+              </select>
+               </div>
+          <div class="col-md-4">
+            <label  class="form-label fs-5">
+              
+           <img class="img-fluid rounded-pill" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLZQXve2BP52kONpicvo7jN9ckhzXyMSINLzCZeQFNj5qv5xPxP16IJYY79uwT1odY64I&usqp=CAU">   
+              
+              State:</label>
+            <select  class="form-select   rounded-pill warning required"onfocus="handleOnfocus(this)"onblur="handleOnblur(this)">
+              <option value="1">choose</option>
+              <option value="2">Karnataka</option>
+              <option value="3">Maharastra</option>
+              <option value="4">Tamil Nadu</option>
+              <option value="5"> West Bengal</option>
+              <option value="6"> kerala</option>
+              <option value="7">Andhra Pradesh</option>
+              </select>
+          </div>
+          <div class="col-md-2">
+            <label  class="form-label fs-5">
+             <img class="img-fluid rounded-pill" src="https://cdn1.vectorstock.com/i/thumb-large/59/95/zip-code-rosette-stamps-using-unclean-texture-vector-35735995.jpg"> 
+              
+              
+              Zip:</label>
+            <input type="text" class="form-control warning  mb-2 rounded-pill"onfocus="handleOnfocus(this)"onblur="handleOnblur(this)" required>
+          </div>
+          </div>
+
+        <div class="col-12">
+            <label  class="form-label fs-5">
+         <img class="img-fluid rounded-pill" src="https://www.pngkey.com/png/full/458-4580000_home-home-icon.png">Permament Address:</label>
+            <input type="text" class="form-control warning  mb-2 rounded-pill"onfocus="handleOnfocus(this)"onblur="handleOnblur(this)" placeholder="1234 Main St" required> 
+          </div>
+          <div class="col-12">
+            <label  class="form-label fs-5 ">
+          <img class="img-fluid rounded-pill" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYrD1aQg8BcEM01Xgeyu75k82I39H6-Hd08GjMCYt5Rd-07_VOJssYU-K5wA8xsfIzOmw&usqp=CAU">Address 2:</label>
+            <input type="text" class="form-control warning  mb-2 rounded-pill"onfocus="handleOnfocus(this)"onblur="handleOnblur(this)" placeholder="Apartment, studio, or floor"required> 
+          </div>
+          <div class="row">
+          <div class="col-md-3">
+            <label class="form-label fs-5">
+          <img class="img-fluid rounded-pill"src="https://www.pngitem.com/pimgs/m/148-1489760_icon-smart-city-png-transparent-png.png">City:</label>
+            <input type="text" class="form-control warning mb-2 rounded-pill"onfocus="handleOnfocus(this)"onblur="handleOnblur(this)" required>
+          </div>
+          <div class="col-md-3">
+            <label  class="form-label fs-5">
+              
+           <img class="img-fluid rounded-pill"src="https://png.pngtree.com/png-vector/20220313/ourmid/pngtree-india-flag-icon-png-gold-border-png-image_4490420.png">   
+              
+              Country:</label>
+            <select class="form-select  rounded-pill warning required"onfocus="handleOnfocus(this)"onblur="handleOnblur(this)">
+              <option >Choose...</option>
+              <option>India</option>
+              <option >Pakistan</option>
+              <option> England</option>
+              <option > Scotland</option>
+              <option>Dubai</option>
+            
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label  class="form-label fs-5">
+            <img class="img-fluid rounded-pill" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3LsGVSNg0ZkfKxZWt-9zZcU0ZGtW6rmUgyoDZ0ssm&s">State:</label>
+            <select  class="form-select   rounded-pill warning required"onfocus="handleOnfocus(this)"onblur="handleOnblur(this)">
+              <option>Choose</option>
+              <option>Karnataka</option>
+              <option>Maharastra</option>
+              <option>Tamil Nadu</option>
+              <option>West Bengal</option>
+              <option>Goa</option>
+              <option >Kerala</option>
+              <option>Andhra Pradesh</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label  class="form-label fs-5">
+           <img class="img-fluid rounded-pill"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSapf4b0LsosOqktbA4_AlVkYhF2lZqvachYQ&usqp=CAU">  
+              
+              
+              Zip</label>
+            <input type="text" class="form-control warning  mb-2 rounded-pill"onfocus="handleOnfocus(this)"onblur="handleOnblur(this)" required>
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <label  class="form-label fs-5">
+            
+         <img class="img-fluid rounded-pill" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs0F4uXq4Ldnf9kF5drvUcUkVAGVjHwdswJQ&usqp=CAU">   
+            
+            
+            Person To Contact in Case of Emergengy:</label>
+          <input type="text" class="form-control warning  mb-2 rounded-pill"onfocus="handleOnfocus(this)"onblur="handleOnblur(this)" placeholder="Parents/Gardient" required>
+        </div>
+
+        <div class="col-md-12">
+          <label  class="form-label fs-5">
+           <img class="img-fluid rounded-pill"src="https://img.favpng.com/4/0/23/network-icon-strategy-amp-management-icon-team-icon-png-favpng-hbV481NGjwne6bFX5WQN2dcdm_t.jpg">Relationship:</label>
+          <input type="text" class="form-control warning mb-2 rounded-pill"onfocus="handleOnfocus(this)"onblur="handleOnblur(this)" placeholder="ex.Father,Mother" required>
+        </div>
+        <div class="col-md-12">
+        <label class="form-label fs-5">
+       <img class="img-fluid rounded-pill"src="https://iconarchive.com/download/i34189/treetog/i/Image-File.ico">   
+          
+          
+          Upload a picture:</label>
+      <input type="file" class="form-control warning mb-5 rounded-pill"onfocus="handleOnfocus(this)"onblur="handleOnblur(this)" name="file" required/>
+        </div>
+      </details>
+    
+    
+      <details class="dtn mt-3 ">
+        <summary class="text-warning text-center text-decoration-underline fs-1 fst-italic fw-bold">
+          <img class="img-fluid rounded-pill" src="https://photoskart.com/wp-content/uploads/2022/05/education-logo-vector-outline.jpg">
+          Academic Background: </summary>
+      <div class="row">
+      <div class="col-md-6">
+        <label class="form-label fs-5">
+          <img class="img-fluid rounded-pill"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpgxtiQJ16dnUIMl58LociAzBA-6Fn2OdF0JQVx9DoiehmVtb_hO6yv8lOWxwRkNpzQAQ&usqp=CAU">
+          
+          
+          Education Qualification:</label>
+        <input type="text" placeholder="  Enter Your Qualification" class="form-control warning  mb-2 rounded-pill"onfocus="handleOnfocus(this)"onblur="handleOnblur(this)" required>
+         </div>
+         <div class="col-md-6">
+          <label class="form-label  fs-5">
+            
+        <img class="img-fluid rounded-pill" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdNzjATQvUokBZtpyG9aA6rbDF502Ro1FSMg&usqp=CAU">    
+            
+            
+            List of Achievement:</label>
+        <input type="file" class="form-control warning mb-2 rounded-pill"onfocus="handleOnfocus(this)"onblur="handleOnblur(this)" name="file" required/>
+        
+          </div>
+        </div>
+  <div class="row">
+  <label class="form-label  fs-5">
+   <img class="img-fluid rounded-pill"src="https://img.cdn.schooljotter2.com/sampled/12428184/900/0/nocrop//"> 
+    
+    
+    Extra Curricular Activities:</label>
+      <div class="col-3">
+      <input class="form-check-input text-warning fs-6" type="checkbox" value="" required>
+     <label class="form-check-label fst-italic text-warning fw-bold fs-6">
+        Student Council
+      </label>
+     </div>
+    <div class="col-3">
+    <input class="form-check-input text-warning fs-6" type="checkbox" value="" required>
+    <label class="form-check-label fst-italic text-warning fw-bold fs-6">
+    Class Officer
+      </label>
+    </div>
+    <div class="col-3">
+      <input class="form-check-input text-warning fs-6" type="checkbox" value="" required>
+    <label class="form-check-label fst-italic text-warning fw-bold fs-6">
+      Club /Organizer
+      </label>
+       </div>
+    <div class="col-3">
+  <input class="form-check-input text-warning fs-6" type="checkbox" value="" required>
+   <label class="form-check-label fst-italic text-warning fw-bold fs-6">
+      Versity Players
+    </label>
+      </div>
+      </div>
+      </details>
+      <details class="dtn mt-3 mb-4">
+      <summary class="text-warning text-decoration-underline fs-1 fst-italic text-center fw-bold">
+       <img class="img-fluid rounded-pill"src="https://www.shutterstock.com/shutterstock/photos/2062773785/display_1500/stock-vector-native-totem-turtle-tribal-ethnic-animal-drawing-drawn-totem-beast-symbols-indigenous-tattoo-2062773785.jpg">
+        Other Details:</summary>
+      <div class="row">
+        <label class="form-label  fw-semibold fs-5">
+        <img class="img-fluid rounded-pill"src="https://lh3.googleusercontent.com/wAPeTvxh_EwOisF8kMR2L2eOrIOzjfA5AjE28W5asyfGeH85glwrO6zyqL71dCC26R63chADTO7DLOjnqRoXXOAB8t2f4C3QnU6o0BA" > 
+          
+          
+          Resource Available:</label>
+            <div class="col-3">
+            <input class="form-check-input text-warning fs-6" type="checkbox" value="" required>
+           <label class="form-check-label fst-italic text-warning fw-bold fs-6">
+              Event Venue
+            </label>
+           </div>
+          <div class="col-3">
+          <input class="form-check-input text-warning fs-6" type="checkbox" value="" required>
+          <label class="form-check-label fst-italic text-warning fw-bold fs-6">
+            Printer
+            </label>
+          </div>
+          <div class="col-3">
+            <input class="form-check-input text-warning fs-6" type="checkbox" value="" required>
+          <label class="form-check-label fst-italic text-warning fw-bold fs-6">
+            LCD Projector
+            </label>
+             </div>
+          <div class="col-3">
+        <input class="form-check-input text-warning fs-6" type="checkbox" value="" required>
+         <label class="form-check-label fst-italic text-warning fw-bold fs-6">
+            Laptop
+          </label>
+    </div>
+    </div>
+     
+<div class="row">
+<label class="form-label   fw-semibold fs-5 mt-2">
+ <img class="img-fluid rounded-pill"src="https://img.freepik.com/free-vector/musicians-people-isometric-icons-set_1284-15109.jpg?w=2000"> 
+  
+  Skill/Talents:</label>
+  <div class="col-3">
+<input class="form-check-input text-warning fs-6" type="checkbox" value="" required>
+<label class="form-check-label fst-italic text-warning fw-bold fs-6">
+  Blogging
+  </label>
+  </div>
+  <div class="col-3">
+  <input class="form-check-input text-warning fs-6" type="checkbox" value="" required>
+  <label class="form-check-label fst-italic text-warning fw-bold fs-6">
+  Acting
+    </label>
+  </div>
+  <div class="col-3">
+  <input class="form-check-input text-warning fs-6" type="checkbox" value="" required>
+  <label class="form-check-label fst-italic text-warning fw-bold fs-6">
+    Arts/Craft
+   </label>
+  </div>
+  <div class="col-3">
+  <input class="form-check-input text-warning fs-6" type="checkbox" value="" required>
+  <label class="form-check-label fst-italic text-warning fw-bold fs-6">
+     Dancing
+    </label>
+    </div>
+     </div>
+<div class="row">
+  <div class="col-3">
+<input class="form-check-input text-warning fs-6" type="checkbox" value="" required>
+  <label class="form-check-label fst-italic text-warning fw-bold fs-6">
+    Calculating
+  </label>
+  </div>
+   <div class="col-3">
+  <input class="form-check-input text-warning fs-6" type="checkbox" value="" required>
+  <label class="form-check-label fst-italic text-warning fw-bold fs-6">
+      Debating
+      </label>
+       </div>
+    <div class="col-3">
+       <input class="form-check-input text-warning fs-6" type="checkbox" value="" required>
+    <label class="form-check-label fst-italic text-warning fw-bold fs-6">
+              Drawing
+       </label>
+      </div>
+  <div class="col-3">
+<input class="form-check-input text-warning fs-6" type="checkbox" value="" required>
+<label class="form-check-label fst-italic text-warning fw-bold fs-6">
+          Eating
+  </label>
+  </div>
+  </div>
+  <div class="row">
+  <div class="col-3">
+      <input class="form-check-input text-warning fs-6" type="checkbox" value="" required>
+        <label class="form-check-label fst-italic text-warning fw-bold fs-6">
+            Fashion
+      </label>
+        </div>
+          <div class="col-3">
+        <input class="form-check-input text-warning fs-6" type="checkbox" value="" required>
+        <label class="form-check-label fst-italic text-warning fw-bold fs-6">
+            Photography
+        </label>
+          </div>
+          <div class="col-3">
+            <input class="form-check-input text-warning fs-6" type="checkbox" value="" required>
+    <label class="form-check-label fst-italic text-warning fw-bold fs-6">
+      Playing Drums
+      </label>
+    </div>
+     <div class="col-3">
+  <input class="form-check-input text-warning fs-6" type="checkbox" value="" required>
+   <label class="form-check-label fst-italic text-warning fw-bold fs-6">
+    Playing Guitar
+     </label>
+      </div>
+  </div>
+  <div class="row">
+  <div class="col-3">
+  <input class="form-check-input text-warning fs-6" type="checkbox" value="" required>
+  <label class="form-check-label fst-italic text-warning fw-bold fs-6">
+    Playing Piano
+    </label>
+  </div>
+  <div class="col-3">
+<input class="form-check-input text-warning fs-6" type="checkbox" value="" required>
+<label class="form-check-label fst-italic text-warning fw-bold fs-6">
+  Programming
+</label>
+</div>
+<div class="col-3">
+<input class="form-check-input text-warning fs-6 " type="checkbox" value="" required>
+<label class="form-check-label fst-italic text-warning fw-bold fs-6">
+Singing
+</label>
+</div>
+<div class="col-3">
+<input class="form-check-input text-warning fs-6" type="checkbox" value="" required>
+<label class="form-check-label fst-italic text-warning fw-bold fs-6 mb-1">
+Writting
+</label>
+ </div>
+</div>
+
+<div class="row">
+  <label class="form-label  fw-semibold  fs-5 mt-2">
+  <img  class="img-fluid rounded-pill"src="https://images.freecreatives.com/wp-content/uploads/2015/09/sports-icon2.jpg"> 
+    
+    
+    Sports:</label>
+  <div class="col-3">
+  <input class="form-check-input text-warning fs-36 type="checkbox" value="" required>
+  <label class="form-check-label fst-italic text-warning fw-bold fs-6">
+    Badminton
+  </label>
+    </div>
+  <div class="col-3">
+  <input class="form-check-input text-warning fs-6" type="checkbox" value="" required>
+  <label class="form-check-label fst-italic text-warning fw-bold fs-6">
+      Basketball
+  </label>
+  </div>
+  <div class="col-3">
+  <input class="form-check-input text-warning fs-6" type="checkbox" value="" required>
+  <label class="form-check-label fst-italic text-warning fw-bold fs-6">
+      Bowling
+  </label>
+  </div>
+  <div class="col-3">
+  <input class="form-check-input text-warning fs-6" type="checkbox" value="" required>
+   <label class="form-check-label fst-italic text-warning fw-bold fs-6">
+    Chess 
+    </label>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-3">
+  <input class="form-check-input text-warning fs-6" type="checkbox" value="" required>
+  <label class="form-check-label fst-italic text-warning fw-bold fs-6">
+    Frisbee
+    </label>
+  </div>
+  <div class="col-3">
+<input class="form-check-input text-warning fs-6" type="checkbox" value="" required>
+<label class="form-check-label fst-italic text-warning fw-bold fs-6">
+  Scrabble
+</label>
+</div>
+<div class="col-3">
+<input class="form-check-input text-warning fs-6" type="checkbox" value="" required>
+<label class="form-check-label fst-italic text-warning fw-bold fs-6">
+Soccer
+</label>
+</div>
+<div class="col-3">
+<input class="form-check-input text-warning fs-6" type="checkbox" value="" required>
+<label class="form-check-label fst-italic text-warning fw-bold fs-6">
+Softball
+</label>
+ </div>
+</div>
+<div class="row">
+<div class="col-3">
+<input class="form-check-input text-warning fs-6" type="checkbox" value="" required>
+<label class="form-check-label fst-italic text-warning fw-bold fs-6">
+        Swimming
+  </label>
+  </div>
+  <div class="col-3">
+  <input class="form-check-input text-warning fs-6" type="checkbox" value="" required>
+<label class="form-check-label fst-italic text-warning fw-bold fs-6">
+      Table Tennis
+</label>
+</div>
+  <div class="col-3">
+  <input class="form-check-input text-warning fs-6" type="checkbox" value="" required>
+  <label class="form-check-label fst-italic text-warning fw-bold fs-6">
+      Tennis
+      </label>
+    </div>
+     <div class="col-3">
+  <input class="form-check-input text-warning fs-6" type="checkbox" value="" required>
+   <label class="form-check-label fst-italic text-warning fw-bold fs-6">
+    Volleyball
+     </label>
+      </div>
+  </div>
+<div class="row">
+<div class="col-12">
+  <label class="form-label  fs-5">Estimate Your family monthly income ?</label>
+  <select class="form-select warning  rounded-pill"onfocus="handleOnfocus(this)"onblur="handleOnblur(this)" >
+<option value="1">choose</option>
+<option value="2">>50,000</option>
+<option value="3">>1,00,000</option>
+<option value="4">>5,00,000</option>
+<option value="5"> >10,00,000</option>
+</select>
+</div>
+</div>
+
+<div class="col-12">
+<label class="form-label  fw-semibold  fs-5 mt-2">Do You have any Scolarship ?</label><br>
+<input type="radio"class="form-check-input fs-4 warning"onfocus="handleOnfocus(this)"onblur="handleOnblur(this)"            name="account-type"id="pa"checked/>
+      <span id="pa"class="fs-4 text-light">Yes</span>
+      <input type="radio" class="form-check-input fs-4 warning"onfocus="handleOnfocus(this)"onblur="handleOnblur(this)" name="account-type"id="pa" checked/>
+      <span id="pa"class="fs-4 text-light">No</span>
+</div>
+
+<div class="col-12">
+      <label class="form-label  fs-5 ">Do You plan to Shift to another Course ?</label><br>
+      <input type="radio"class="form-check-input fs-4 text-warning" name="account-type"id="pa"checked/>
+      <span id="pa"class="fs-4 text-light">Yes</span>
+      <input type="radio" class="form-check-input fs-4 text-warning" name="account-type"id="pa" checked/>
+      <span id="pa"class="fs-4 text-light">No</span>
+    </div> 
+
+
+    <div class="col-md-12">
+      <label  class="form-label fs-5">If,yes to What course</label>
+      <input type="text" class="form-control warning  mb-2 rounded-pill"onfocus="handleOnfocus(this)"onblur="handleOnblur(this)" placeholder="ex.Bachelor degree/ Master degree/Phd " required>
+    </div>
+
+
+    <div class="row">
+      <div class="col-12">
+    <label class="form-label  fs-5"> What is your plan after college ?</label>
+      <select class="form-select warning  rounded-pill"onfocus="handleOnfocus(this)"onblur="handleOnblur(this)" >
+    <option value="1" >choose</option>
+    <option value="2" >Take another Bachelor Degree</option>
+    <option value="3" >Take Master Degree</option>
+    <option value="4" >Take Master Degree,then Phd</option>
+    <option value="5">work</option>
+    </select>
+  </div>
+</div>
+<div class="row">
+<div class="col-12">
+<label class="form-label fs-5 ">
+  <img class="img-fluid rounded-pill"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIyq-zywnLZrQMF_-cnBPY42cGSQr0g-mwvA&usqp=CAU">
+  
+  
+  
+  Comments:</label>
+<textarea  class="form-control warning mb-5 rounded-pill"onfocus="handleOnfocus(this)"onblur="handleOnblur(this)"name="text" cols="40" rows="4"placeholder="I like coding on beach"></textarea>
+</div>
+</div>
+
+
+<div class="row">
+
+  <div class="col-1"></div>
+  <div class="col-1"></div>
+  <div class="col-1"></div>
+  
+<div class="col-md-2">
+  <button type="button" class=" btn text-center text-warning bg-danger  fw-semibold  fs-6 mr-5 rounded-pill mt-5"onclick="btn()"> Submit </button>
+</div>
+<div class="col-md-2">
+  <button type="button" class=" btn text-center text-warning bg-danger  fw-semibold  fs-6 rounded-pill mt-5" onclick="btn()"> Clear </button>
+</div>
+<div class="col-md-2">
+  <button type="button" class=" btn fw-bold text-center text-warning bg-danger fst-italic fw-semibold  fs-6 rounded-pill mt-5"onclick="btn()"> Reset</button>
+</div>
+<div class="col-1"></div>
+<div class="col-1"></div>
+<div class="col-1"></div>
+</details>
+</fieldset>
+</form>
+<footer>
+  
+  
+  <div class="container-fluid">
+    <div class="row mt-3 mb-5">
+    <div class="col-1">
+  <svg xmlns="http://www.w3.org/2000/svg" width="56" height="66" fill="currentColor" class="bi bi-facebook rounded-pill" viewBox="0 0 16 16">
+    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+  </svg>
+</div>
+<div class="col-1">
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="66" fill="currentColor" class="bi bi-whatsapp rounded-pill" viewBox="0 0 16 16">
+  <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+</svg>
+</div>
+<div class="col-1">
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="66" fill="currentColor" class="bi bi-messenger rounded-pill" viewBox="0 0 16 16">
+<path d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.639.639 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.639.639 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76zm5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z"/>
+</svg>
+</div>
+<div class="col-1">
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="66" fill="currentColor" class="bi bi-twitter rounded-pill" viewBox="0 0 16 16">
+<path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+</svg>
+</div>
+<div class="col-1 fw-bold"><svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi bi-chat-dots rounded-pill" viewBox="0 0 16 16">
+<path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+<path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"/>
+</svg></div>
+<div class="col-1 fw-bold"></div>
+<div class="col-1 fw-bold"></div>
+<div class="col-1 fw-bold"><svg xmlns="http://www.w3.org/2000/svg" width="56" height="66" fill="currentColor" class="bi bi-pinterest rounded-pill" viewBox="0 0 16 16">
+<path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z"/>
+</svg></div>
+<div class="col-1 fw-bold"><svg xmlns="http://www.w3.org/2000/svg" width="56" height="66" fill="currentColor" class="bi bi-github rounded-pill" viewBox="0 0 16 16">
+<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+</svg></div>
+<div class="col-1"><svg xmlns="http://www.w3.org/2000/svg" width="56" height="66" fill="currentColor" class="bi bi-share rounded-pill" viewBox="0 0 16 16">
+<path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+</svg></div>
+<div class="col-1"><svg xmlns="http://www.w3.org/2000/svg" width="56" height="66" fill="currentColor" class="bi bi-linkedin rounded-pill" viewBox="0 0 16 16">
+<path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+</svg></div>
+<div class="col-1"><svg xmlns="http://www.w3.org/2000/svg" width="56" height="66" fill="currentColor" class="bi bi-youtube rounded-pill" viewBox="0 0 16 16">
+<path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+</svg></div>
+</div>
+</div>
+</footer>
+
+
+
+
+<script src="REJ.JS"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" ></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>
