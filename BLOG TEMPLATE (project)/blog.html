@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<link rel="stylesheet" href="blog.css">
+<body>
+
+<nav class="navbar navbar-expand-sm bg-warning navbar-warning">
+  
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      
+      <img class="img-thumbnail"src="data:image/jpeg;base64,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">
+      <img class="img-thumbnail" src="data:image/png;base64,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">
+      <img class="img-thumbnail"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFA12H5_e6fYl3d1pgXSfr-AA0Lb6YtX25wA&usqp=CAU">
+      
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+  </div>
+</nav>
+
+<div class="container-fluid mt-3">
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_800,q_50/esci/media/motion/2022/0827/dm_220827_viratinterview/dm_220827_viratinterview.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt4s-aqnUl2KPWlwF-a630SOazOwQN4Sbnhw&usqp=CAU" alt="Chicago" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxPDh8sRlv1LzDrTgjOlPMNZ-yRnPecP88eQ&usqp=CAU" alt="New York" class="d-block" style="width:100%">
+      </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  
+</div>
+<h1 class="text-left bg-info text-danger  mt-3">Personal information  </h1>
+<table class="table table-success table-striped table-responsive mt-0">
+    <thead>
+      <tr>
+        <th scope="col">Full Name</th>
+        <th scope="col">Virat Kholi</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="col">Born</th>
+        <td scope="col">November 5 1998 Delhi</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="col">Age</th>
+        <td scop="col">34 years</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">National Side</th>
+        <td colspan="2">India</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">Batting Style</th>
+        <td colspan="2">Right-handed</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">Bowling</th>
+        <td colspan="2">Right-arm Medium</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">Sport</th>
+        <td colspan="2">Cricket</td>
+        <td></td>
+      </tr>
+      
+    </tbody>
+  </table>
+  <div class="container-fluid">
+    
+    <div class="row">
+      
+      <div class="col-6">
+        <h1 class="text-left text-center bg-warning"> Ranking</h1>
+        <table class="table table-success table-responsive table-striped mt-0">
+          
+          <tr>
+            <th scope="col-6"></th>
+            <th scope="col-6">Test</th>
+            <th scope="col-6">ODI</th>
+            <th scope="col-6">T20</th>
+            </tr>
+            <tr>
+            <td scope="col-6">Batting</th>
+            <td scope="col-6">12</th>
+            <td scope="col-6">5</th>
+            <td  scope="col-6">29 </td>
+            </tr>
+            <tr>
+            <td scope="col-6">Bowling</th>
+              <td scope="col-6">-</th>
+              <td scope="col-6">-</th>
+              <td  scope="col-6">- </td>
+              </tr>
+              </table>
+      </div>
+    
+      
+      <div class="col-6">
+        <h1 class="text-left text-center bg-warning"> Man Of The Match </h1>
+        <table class="table table-success table-striped table-responsive mt-0">
+       <tr>
+              
+              <th scope="col-6">Test</th>
+              <th scope="col-6">ODI</th>
+              <th scope="col-6">T20</th>
+              <th scope="col-6">World cup</th>
+              <th scope="col-6">CL</th>
+              </tr>
+              <tr>
+              <td scope="col-6">9</th>
+              <td scope="col-6">36</th>
+              <td scope="col-6">13</th>
+              <td  scope="col-6">2 </td>
+              <td  scope="col-6">3</td>
+              </tr>
+              <tr>
+              <td scope="col-6">-</th>
+              <td scope="col-6">-</th>
+              <td scope="col-6">-</th>
+              <td  scope="col-6">- </td>
+              <td scope="col-6">-</th>
+              </tr>
+              </table>
+              </div>
+            </div>
+          </div>
+    <h1 class="text-left text-decoration-underline text-center text-success mt-3"> Virat Kholi Overall Stats </h1>
+    <h1 class="text-left bg-info text-danger mt-3"> Batting & Fielding Performance </h1>
+    <table class="table table-success  table-responsive  table-striped mt-0">
+      <thead>
+        <tr>
+          <th scope="col-12"></th>
+          <th scope="col-12">M</th>
+          <th scope="col-12">I</th>
+          <th scope="col-12">N/O</th>
+          <th scope="col-12">R</th>
+          <th scope="col-12">HS</th>
+          <th scope="col-12">100S</th>
+          <th scope="col-12">50S</th>
+          <th scope="col-12">4S</th>
+          <th scope="col-12">6S</th>
+          <th scope="col-12">AVG</th>
+          <th scope="col-12">S/R</th>
+          <th scope="col-12">CT</th>
+          <th scope="col-12">ST</th>
+          <th scope="col-12">Ducks</th>
+          <th scope="col-12">R/O</th>
+</tr>
+      
+      </thead>
+      <tbody>
+        <tr>
+          <td scope="col-12">Test</td>
+          <td scope="col-12">102</td>
+          <td scope="col-12">173</td>
+          <td scope="col-12">10</td>
+          <td scope="col-12">8074</td>
+          <td scope="col-12">254*vs SA</td>
+          <td scope="col-12">27</td>
+          <td scope="col-12">28</td>
+          <td scope="col-12">910</td>
+          <td scope="col-12">24</td>
+          <td scope="col-12">49.53</td>
+          <td scope="col-12">55.68</td>
+          <td scope="col-12">102</td>
+          <td scope="col-12">0</td>
+          <td scope="col-12">14</td>
+          <td scope="col-12">2</td>
+        </tr>
+        <tr>
+          <td scope="col-12">ODI</td>
+          <td scope="col-12">262</td>
+          <td scope="col-12">253</td>
+          <td scope="col-12">39</td>
+          <td scope="col-12">12344</td>
+          <td scope="col-12">183 v PAK</td>
+          <td scope="col-12">43</td>
+          <td scope="col-12">64</td>
+          <td scope="col-12">1159</td>
+          <td scope="col-12">125</td>
+          <td scope="col-12">57.68</td>
+          <td scope="col-12">92.89</td>
+          <td scope="col-12">138</td>
+          <td scope="col-12">0</td>
+          <td scope="col-12">15</td>
+          <td scope="col-12">12</td>
+        </tr>
+        <tr>
+          <td scope="col-12">World Cup</td>
+          <td scope="col-12">26</td>
+          <td scope="col-12">26</td>
+          <td scope="col-12">4</td>
+          <td scope="col-12">1030</td>
+          <td scope="col-12">107 V Pak</td>
+          <td scope="col-12">2</td>
+          <td scope="col-12">6</td>
+          <td scope="col-12">91</td>
+          <td scope="col-12">5</td>
+          <td scope="col-12">46.81</td>
+          <td scope="col-12">86.70</td>
+          <td scope="col-12">14</td>
+          <td scope="col-12">0</td>
+          <td scope="col-12">0</td>
+          <td scope="col-12">1</td>
+          
+        </tr>
+        <tr>
+        
+          <td scope="col-12">T-20</td>
+          <td scope="col-12">104</td>
+          <td scope="col-12">96</td>
+          <td scope="col-12">27</td>
+          <td scope="col-12">3584</td>
+          <td scope="col-12">122* V AFG</td>
+          <td scope="col-12">1</td>
+          <td scope="col-12">32</td>
+          <td scope="col-12">319</td>
+          <td scope="col-12">104</td>
+          <td scope="col-12">51.94</td>
+          <td scope="col-12">138.37</td>
+          <td scope="col-12">486</td>
+          <td scope="col-12">0</td>
+          <td scope="col-12">4</td>
+          <td scope="col-12">6</td>
+        </tr>
+        <tr>
+          
+         <td scope="col-12">CL</td>
+          <td scope="col-12">15</td>
+          <td scope="col-12">14</td>
+          <td scope="col-12">3</td>
+          <td scope="col-12">424</td>
+          <td scope="col-12">84*NSW</td>
+          <td scope="col-12">0</td>
+          <td scope="col-12">2</td>
+          <td scope="col-12">45</td>
+          <td scope="col-12">14</td>
+          <td scope="col-12">38.54</td>
+          <td scope="col-12">150.35</td>
+          <td scope="col-12">10</td>
+          <td scope="col-12">0</td>
+          <td scope="col-12">1</td>
+          <td scope="col-12">0</td>
+        </tr>
+        <tr>
+         <td scope="col-12">IPL</td>
+          <td scope="col-12">223</td>
+          <td scope="col-12">215</td>
+          <td scope="col-12">32</td>
+          <td scope="col-12">6624</td>
+          <td scope="col-12">113*V PBKS</td>
+          <td scope="col-12">5</td>
+          <td scope="col-12">44</td>
+          <td scope="col-12">578</td>
+          <td scope="col-12">218</td>
+          <td scope="col-12">36.19</td>
+          <td scope="col-12">129.14</td>
+          <td scope="col-12">93</td>
+          <td scope="col-12">0</td>
+          <td scope="col-12">9</td>
+          <td scope="col-12">9</td>
+        </tr>
+
+      </table>
+  </div>
+ 
+  <div class="container-fluid mt-3">
+    <h1 class="text-left bg-info text-danger mt-3"> Bowling Performance </h1>
+    <table class="table table-success table-responsive table-striped mt-0">
+      <thead>
+        <tr>
+    <th scope="col"></td>
+    <th scope="col-12">I</th>
+      <th scope="col-12">O</th>
+      <th scope="col-12">M</th>
+      <th scope="col-12">R</th>
+      <th scope="col-12">W</th>
+      <th scope="col-12">Best</th>
+       <th scope="col-12">3s</th>
+      <th scope="col-12">5s</th>
+      <th scope="col-12">Avg</th>
+      <th scope="col-12">E/R</th>
+      <th scope="col-12">S/R</th>
+      <th scope="col-12">Mics</th>
+    </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        
+        <td scope="col-12">Test</td>
+        <td scope="col-12">11</td>
+        <td scope="col-12">29.1</td>
+        <td scope="col-12">2</td>
+        <td scope="col-12">84</td>
+        <td scope="col-12">0</td>
+        <td scope="col-12">0/0 v SA</td>
+        <td scope="col-12">0</td>
+        <td scope="col-12">0</td>
+        <td scope="col-12">-</td>
+        <td scope="col-12">2.88</td>
+        <td scope="col-12">-</td>
+        <td scope="col-12">11</td>
+        
+        
+      </tr>
+      <tr>
+       
+        
+        <td scope="col-12">ODI</td>
+        <td scope="col-12">48</td>
+        <td scope="col-12">106.5</td>
+        <td scope="col-12">1</td>
+        <td scope="col-12">66.5</td>
+        <td scope="col-12">4</td>
+        <td scope="col-12">1/15 v SA</td>
+        <td scope="col-12">0</td>
+        <td scope="col-12">0</td>
+        <td scope="col-12">166.25</td>
+        <td scope="col-12">6.22</td>
+        <td scope="col-12">160.25</td>
+        <td scope="col-12">48</td>
+        
+        
+      </tr>
+      <tr>
+        
+        
+        <td scope="col-12">World cup</td>
+        <td scope="col-12">3</td>
+        <td scope="col-12">3</td>
+        <td scope="col-12">0</td>
+        <td scope="col-12">19</td>
+        <td scope="col-12">0</td>
+        <td scope="col-12">0/6 v SL</td>
+        <td scope="col-12">0</td>
+        <td scope="col-12">0</td>
+        <td scope="col-12">-</td>
+        <td scope="col-12">6.33</td>
+        <td scope="col-12">-</td>
+        <td scope="col-12">3</td>
+        
+        
+      </tr>
+      <tr>
+       
+        <td scope="col-12">T20 I</td>
+        <td scope="col-12">13</td>
+        <td scope="col-12">25.2</td>
+        <td scope="col-12">0</td>
+        <td scope="col-12">204</td>
+        <td scope="col-12">4</td>
+        <td scope="col-12">1/13 v EN</td>
+        <td scope="col-12">0</td>
+        <td scope="col-12">0</td>
+        <td scope="col-12">51.00</td>
+        <td scope="col-12">8.05</td>
+        <td scope="col-12">38.00</td>
+        <td scope="col-12">13</td>
+       
+        
+      </tr>
+      <tr>
+       
+        <td scope="col-12">CL</td>
+        <td scope="col-12">6</td>
+        <td scope="col-12">93</td>
+        <td scope="col-12">0</td>
+        <td scope="col-12">95</td>
+        <td scope="col-12">0</td>
+        <td scope="col-12">0/9 v SOM</td>
+        <td scope="col-12">0</td>
+        <td scope="col-12">0</td>
+        <td scope="col-12">-</td>
+        <td scope="col-12">10.00</td>
+        <td scope="col-12">-</td>
+        <td scope="col-12">6</td>
+        
+        
+      </tr>
+      <tr>
+        
+        
+        <td scope="col-12">IPL</td>
+        <td scope="col-12">26</td>
+        <td scope="col-12">41.5</td>
+        <td scope="col-12">0</td>
+        <td scope="col-12">368</td>
+        <td scope="col-12">4</td>
+        <td scope="col-12">2/25 v DCH</td>
+        <td scope="col-12">0</td>
+        <td scope="col-12">0</td>
+        <td scope="col-12">92.00</td>
+        <td scope="col-12">8.79</td>
+        <td scope="col-12">62.75</td>
+        <td scope="col-12">26</td>
+        
+        
+      </tr>
+    </tbody>
+  </table>
+  </div>
+<div class="container-fluid mt-3">
+  <p class="display-6 text-success text-decoration-underline"> Virat kholi News</p>
+</div>
+<div class="container-fluid mt-3">
+  <div class="card mb-1" style="max-width: 100%;">
+    <div class="row g-0">
+      <div class="col-md-4  hi">
+        <img  src="https://c.ndtvimg.com/2022-09/0uhpgqdo_rohit-sharma-afp_625x300_07_September_22.jpg?im=FeatureCrop,algorithm=dnn,width=240,height=180" class="img-fluid text-warning img1" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body bg-info">
+          <h5 class="card-title ">India Squad For T20 World Cup: Jasprit Bumrah And Harshal Patel Return, R Ashwin Named. Mohammed Shami In Stand By</h5>
+          <p class="card-text   text-dark">India Team for T20 World Cup: Pace duo of Jasprit Bumrah and Harshal Patel make a comeback after an injury layoff in place of youngsters Ravi Bishnoi and Avesh Khan. Rohit Sharma will lead India in an ICC tournament for the first time, while opening batter KL Rahul has been named as his deputy.Rohit Sharma will lead India </p>
+          <p class="card-text mb-3"><small class="text-muted"> 12 sept 2022 Ndtv Sports Desk</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+<div class="card mb-1" style="max-width: 100%;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="https://c.ndtvimg.com/2022-09/9klr4tb8_kohli-anushka_120x90_12_September_22.jpg" class="img-fluid text-body img2" alt="---">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body bg-info">
+        <h5 class="card-title"> Anushka Sharma Posts Photos With Virat Kohli At Road-side Cafe. See Pics</h5>
+        <p class="card-text">Virat Kohli had a great Asia Cup where he scored two half-centuries and a century</p>
+        <p class="card-text"><small class="text-muted">Sep 12, 2022 NDTV Sports DeskLast </small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-1" style="max-width:100%;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="https://c.ndtvimg.com/2022-09/nsvokeno_rohit-sharma-afp_625x300_07_September_22.jpg?im=FeatureCrop,algorithm=dnn,width=240,height=180" class="img-fluid img3 " alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body bg-info">
+        <h5 class="card-title"> India Squad: What Could Be The Ideal Combination? </h5>
+        <p class="card-text">Taking wickets up front has been one problem for Team India and Shami has a knack of picking up wickets right at the top.</p>
+        <p class="card-text"><small class="text-muted"> Vishesh RoyT20 World Cup,</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-1" style="max-width: 100%;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="https://c.ndtvimg.com/2022-09/h55ekc1o_virat-kohli-afp_625x300_09_September_22.jpg?im=FeatureCrop,algorithm=dnn,width=240,height=180"class="img-fluid img4" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body  bg-info">
+        <h5 class="card-title">Asia Cup Talking Points: Sri Lanka Surprise, Virat Kohli's Comeback</h5>
+        <p class="card-text"> Dasun Shanaka's Sri Lanka beat Pakistan by 23 runs in Dubai on Sunday to clinch their sixth Asia Cup.</p>
+        <p class="card-text"><small class="text-muted">Sep 12, 2022Agence France-Presse</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-1" style="max-width:100%;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="https://c.ndtvimg.com/2019-11/o96rr908_sourav-ganguly-virat-kohli-afp_625x300_23_November_19.jpg?im=FeatureCrop,algorithm=dnn,width=240,height=180" class="img-fluid text-primary img5" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body  bg-info">
+        <h5 class="card-title"> "I Maybe President Of The Board But...": Why Sourav Ganguly Hasn't Given Virat Kohli Any Advice Amid Recent Slump</h5>
+        <p class="card-text" >BCCI president Sourav Ganguly appeared in an episode of "The Ranveer Show" and was asked if he gave Kohli any advice during this time, but he said that he couldn't as he rarely gets to see the star batter.</p>
+        <p class="card-text"><small class="text-muted">Sep 11, 2022Abhimanyu Bose</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-1" style="max-width: 100%;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="https://c.ndtvimg.com/2021-12/g6ro6ea8_sourav-ganguly-virat-kohli-afp_625x300_13_December_21.jpg?im=FaceCrop,algorithm=dnn,width=240,height=180"class="img-fluid  img6" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body  bg-info">
+        <h5 class="card-title">"He Is More Skillful Than I Am": Sourav Ganguly On Comparisons With Virat Kohli</h5>
+        <p class="card-text"> Ganguly was asked by the host on "The Ranveer Show" about what he feels about comparisons with Kohli based on their aggression..</p>
+        <p class="card-text"><small class="text-muted">sep 11, 2022Abhimanyu Bose</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-1" style="max-width: 100%;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="https://c.ndtvimg.com/2022-09/3ovftiv_virat-kohli-240_120x90_10_September_22.jpg"  class="img-fluid img7 " alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body  bg-info">
+        <h5 class="card-title">Khao Piyo Aish Karo Mitro</i>": Virat Kohli Shares Adorable Throwback Picture</h5>
+        <p class="card-text"><i> Taking to Instagram, Virat Kohli shared a throwback photo, in which he can be seen enjoying a wholesome meal</p>
+        <p class="card-text"><small class="text-muted">Sep 12, 2022 NDTV Sports DeskLast</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link bg-warning border border-3 border-dark">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link bg-warning border border-3 border-dark" href="blog.html">1</a></li>
+    <li class="page-item"><a class="page-link bg-warning border border-3 border-dark" href="News.html">2</a></li>
+    <li class="page-item"><a class="page-link bg-warning border border-3 border-dark" href="test.html">3</a></li>
+    <li class="page-item">
+      <a class="page-link bg-warning border border-3 border-dark" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+</body>
+</html>

@@ -1,0 +1,105 @@
+body{
+    background-color:burlywood;
+}
+
+.img-thumbnail{
+    height:100px;
+    border-radius:50px ;
+    border:3px dotted black;
+}
+
+.img-thumbnail:hover{
+    height:100px;
+    border-radius:50px ;
+    border:5px dotted red;
+}
+.nav-link{
+    font-size: 20px;
+    border:3px solid black;
+    margin:9px;
+    color:yellow;
+    border-radius:25px ;
+}
+.d-block{
+    height:400px;
+}
+
+.card-body{
+    border:3px dotted red;
+
+}
+.text-body{
+height: 130px;
+
+}
+.img-fluid{
+    width:100%;
+    height:130px;
+    border:3px solid black;
+}
+.text-warning{
+    height:200px ;
+}
+.text-primary{
+    height:180px ;
+}
+.col-md-4{
+border:5px groove goldenrod;
+
+font-weight: bold;
+font-size:35px ;
+}
+.col-md-8{
+    border:5px groove goldenrod;
+
+    }
+  a{
+    text-decoration: none;
+    color:black;
+    font-size: 32px;
+    text-align: center;
+    
+}
+
+    
+.btn-group{
+    float: left;
+   
+}
+.img1{
+    width:100%;
+    height:245px;
+    border:3px dotted red;
+}
+
+
+.img2{
+    width:100%;
+    height:155px;
+    border:3px dotted red;
+}
+.img3{
+    width:100%;
+    height:155px;
+    border:3px dotted red;
+}
+.img4{
+    width:100%;
+    height:155px;
+    border:3px dotted red;
+}
+.img5{
+    width:100%;
+    height:205px;
+    border:3px dotted red;
+}
+.img6{
+    width:100%;
+    height:181px;
+    border:3px dotted red;
+}
+.img7{
+    width:100%;
+    height:181px;
+    border:3px dotted red;
+}
