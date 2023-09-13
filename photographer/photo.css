@@ -1,0 +1,170 @@
+body{
+    background-image:repeating-conic-gradient(black .3%,white .6%);
+    background-size:20px 20px ;
+}
+
+
+.bi-linkedin{
+    border:2px dotted gold;
+    border-radius: 25%;
+    position: relative;
+    left:150px;
+    cursor: pointer;
+}
+.bi-linkedin:hover{
+    border:3px dotted whitesmoke;
+    border-radius: 25%;
+    
+    cursor: pointer;
+}
+.bi-instagram{
+    border:2px dotted gold;
+    border-radius: 25%;
+    position:relative;
+    left:140px;
+    cursor: pointer;
+}
+.bi-instagram:hover{
+    border:3px dotted whitesmoke;
+    border-radius: 25%;
+    
+    cursor: pointer;
+}
+.bi-whatsapp{
+    border:2px dotted  gold;
+    border-radius: 25%;
+    position:relative;
+    left:130px;
+    cursor: pointer;
+}
+.bi-whatsapp:hover{
+    border:3px dotted whitesmoke;
+    border-radius: 25%;
+    
+    cursor: pointer;
+}
+.bi-camera{
+    border:2px dotted  gold;
+    border-radius: 25%;
+    position:relative;
+    right:20px;
+    cursor: pointer;
+}
+.bi-camera:hover{
+    border:3px dotted whitesmoke;
+    border-radius: 25%;
+    
+    cursor: pointer;
+}
+    
+
+.bi-facebook{
+    border:2px dotted gold;
+    border-radius: 25%;
+    position:relative;
+    left:120px;
+    cursor: pointer;
+}
+.bi-facebook:hover{
+    border:3px dotted whitesmoke;
+    border-radius: 25%;
+    cursor: pointer;
+}
+    .nav-link:hover{
+       border:1.3px dotted gold;
+       background-color: rgb(72, 56, 56);
+       border-radius:77px;
+    }
+    .dropdown-item:hover{
+        border:0.7px solid gold;
+
+        border-radius:77px;
+    }
+    h6{
+        color:azure;
+        font-size:11px ;
+    }
+    .btn{
+        margin-left:407px;
+        border:2px dotted gold;
+       background-color: rgb(72, 56, 56);
+       border-radius:77px;
+    }
+    .btn:hover{
+        margin-left:407px;
+        border:2px dotted white;
+        background-color: red;
+        border-radius:77px;
+    }
+    .img-fluid{
+        border:4px dotted whitesmoke;
+        border-radius:17px;
+        cursor: pointer;
+        height:200px;
+        width:220px;
+        margin:4px;
+    }
+    .img-fluid:hover{
+        border:4px dotted  black;
+        border-radius:17px;
+        cursor: pointer;
+        
+    }
+    .img-thumbnail{
+        margin-left:125px;
+        height:600px;
+        width:300px;
+        border:5px dotted red;
+        border-radius:60% ;
+    }
+    p{
+    font-size:16px ;
+    text-align: justify;
+    }
+    h4{
+        text-align: justify;
+        font-size:23px ;
+    }
+    h3{
+        text-align: justify;
+        font-size:16px ;
+    }
+    pre{
+        color:aliceblue;
+    }
+    .img1{
+        height:200px;
+        width:200px;
+        border-radius:50%;
+    }
+    .card-text{
+        font-size:12px;
+    }
+    .warn{
+        border:3px dotted whitesmoke;
+    }
+    .bi-twitter{
+        margin-left:30px;
+        border-radius:50%;
+        border:2px dotted white;
+        margin-top: 26px;
+    }
+    .bi-pinterest{
+        margin-left:5px;
+        border-radius:50%;
+        border:2px dotted white;
+        margin-top: 26px;
+    }
+    .bi-messenger{
+        margin-left:5px;
+        border-radius:50%;
+        border:2px dotted white;
+        margin-top: 26px;
+    }
+    .bi-telegram{
+        margin-left:5px;
+        border-radius:50%;
+        border:2px dotted white;
+        margin-top: 26px;
+    }
+    
