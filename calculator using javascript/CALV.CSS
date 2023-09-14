@@ -1,0 +1,37 @@
+body{
+background: radial-gradient(circle, transparent 20%, #0b0b05 40%, #0b0b05 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #0b0b05 20%, #0b0b05 80%, transparent 80%, transparent) 12.5px 12.5px, linear-gradient(#747524 1px, transparent 1px) 0 -0.5px, linear-gradient(90deg, #747524 1px, #0b0b05 1px) -0.5px 0;
+background-size: 15px 25px, 25px 25px, 12.5px 12.5px, 12.5px 12.5px;
+}
+
+
+#fellow{
+    width:280px;
+    height:400px;
+    border-width:10px;
+    border-style:groove;
+    border-image:repeating-radial-gradient(red,green,orange,lime,blue,violet,white)1;
+    margin-left:370px ;
+    margin-top:70px ;
+    background-image: repeating-radial-gradient(aqua 0% 0.3%,white 0.3% 0.6%,red 0.6% 0.9%,blue.9% 1.2%,violet 1.2% 1.5%);
+
+}
+.img1{
+    border-width:6px;
+    border-style:solid;
+    border-radius:50px;
+    border-image:repeating-radial-gradient(red,green,lime,brown)1;
+
+}
+.btn{
+border-width:5px;
+border-style:solid;
+border-image:repeating-radial-gradient(red,green,orange,lime,brown,violet,white)1;
+background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(253,101,133,1) 0%, rgba(255,211,165,1) 90% );
+
+}
+#result{
+    height:60px;
+    background-color: #9c9c49;
+    opacity: 1;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #9c9c49 4px ), repeating-linear-gradient( #25257655, #252576 );
+}
