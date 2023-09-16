@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,500&display=swap');
+
+.text-dark{
+  font-family: 'Chakra Petch', sans-serif;
+
+}
+*{
+  box-sizing: border-box;
+}
+    .hum {
+        background-image: repeating-conic-gradient( rgba(221, 237, 193, 0.367),rgba(218, 119, 119, 0.844),rgb(111, 109, 217) 1%);
+        height:900px;
+        background-size:70px 70px ;
+        
+      }
+      
+      .i{
+        width:50px;
+        height:50px;
+        margin-left:40px ;
+        border:5px dotted goldenrod;
+      }
+      .i2{
+        width:100%;
+        height:700px ;
+        border:4px solid goldenrod
+      }
+      .btn{
+        border:3px dotted beige;
+        float: left;
+      }
+      .i3{
+        height:370px;
+        border:4px solid goldenrod;
+        z-index:1;
+      }
+     
+     .overlay{
+      position: absolute;
+      bottom:0;
+      left:0;
+      right:0;
+      background-color: aquamarine;
+     }
+     .navbar{
+      background-image: repeating-radial-gradient( grey,white,black 1%);
+      background-size:70px 70px ;
+     }
+     .i4{
+      height:100px;
+      width:120px;
+      border:5px dotted whitesmoke;
+     }
+     .mar{
+      margin-left:50px ;
+     }
+     span{
+      
+      text-align:justify;
+      
+     }
+     .bi-facebook{
+      margin-top:5px ;
+        color:brown;
+        border:3.5px dotted whitesmoke;
+        background-image:url("https://cdn.pixabay.com/photo/2017/11/09/10/48/christmas-2933030__340.jpg"); 
+        
+        
+  
+      }
+  .bi-facebook:hover{
+          transition-delay:0.1s;
+          transition-property:all;
+          transition-timing-function:linear;
+          transition-duration:21s ;
+          transform:rotate(360deg) ;
+  } 
+      .bi-twitter{
+          margin-top:5px ;
+          color:brown;
+          border:3.5px dotted whitesmoke;
+          background-image:url("https://cdn.pixabay.com/photo/2017/11/09/10/48/christmas-2933030__340.jpg"); 
+          
+       }
+      .bi-twitter:hover{
+          transition-delay:0.1s;
+          transition-property:all;
+          transition-timing-function:ease;
+          transition-duration:20s ;
+          transform:rotate(360deg) ;
+          }
+     .bi-linkedin{
+          margin-top:5px ;
+          color:brown;
+          border:3.5px dotted whitesmoke;
+          background-image:url("https://cdn.pixabay.com/photo/2017/11/09/10/48/christmas-2933030__340.jpg"); 
+           
+      }
+      .bi-linkedin:hover{
+          transition-delay:0.1s;
+          transition-property:all;
+          transition-timing-function:ease;
+          transition-duration:20s ;
+          transform:rotate(360deg) ;
+          }
+     .bi-instagram{
+         margin-top:5px;
+          color:brown;
+          border:3.5px dotted whitesmoke;
+          background-image:url("https://cdn.pixabay.com/photo/2017/11/09/10/48/christmas-2933030__340.jpg"); 
+      }
+      .bi-instagram:hover{
+          transition-delay:0.1s;
+          transition-property:all;
+          transition-timing-function:ease;
+          transition-duration:20s ;
+          transform:rotate(360deg) ;
+      }
+      #btg{
+        background-color:yellow ;
+      }
+      #btg:hover{
+        background-color:tomato ;
+      }
+      .frm{
+        margin-left:350px ;
+      }
+      .i9{
+        width:70px;
+        height:70px;
+        border:4px dotted blue;
+      }
+       .bi-envelope{
+       border:4px dotted whitesmoke;
+       background-color: red;
+      }
+      .ph{
+        margin-top:-22px ;
+      }
+      .footer{
+        background-color:rgba(24, 82, 39);
+      }
+     
+    
